@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (MNIST is automatically downloaded)
+*.pkl
+*.h5
+*.pth
+
+# Jupyter
+.ipynb_checkpoints
+
+# Logs and outputs
+logs/
+outputs/
+models/
