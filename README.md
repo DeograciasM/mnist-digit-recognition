@@ -15,3 +15,14 @@ Using the MNIST dataset (70,000 grayscale images of handwritten digits).
 2. Achieve >95% accuracy
 3. Visualize results
 4. Follow Git best practices with incremental commits
+
+## Development
+We'll use `develop` branch for development and `main` for stable versions.
+
+## Current Status
+- [x] Project setup
+- [x] Dependencies installed
+- [ ] Dataset loaded
+- [ ] Model defined
+- [ ] Training completed
+- [ ] Evaluation done
