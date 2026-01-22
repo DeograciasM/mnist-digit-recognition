@@ -33,3 +33,5 @@ Thumbs.db
 logs/
 outputs/
 models/
+*.h5
+notebook_model.h5
