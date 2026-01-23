@@ -10,7 +10,7 @@ import random
 def load_model():
     """Load the latest trained model"""
     try:
-        model = keras.models.load_model('models/mnist_model_latest.h5')
+        model = keras.models.load_model('models/advanced_model.h5')
         print("Model loaded successfully!")
         model.summary()
         return model
