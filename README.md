@@ -1,6 +1,6 @@
 # MNIST Digit Recognition
 
-A beginner-friendly machine learning project for handwritten digit recognition using neural networks.
+A beginner-friendly machine learning project for handwritten digit recognition using Convolutional neural networks.
 
 ## Project Structure
 - `src/` - Source code for the model and training
@@ -22,7 +22,7 @@ We'll use `develop` branch for development and `main` for stable versions.
 ## Current Status
 - [x] Project setup
 - [x] Dependencies installed
-- [ ] Dataset loaded
-- [ ] Model defined
-- [ ] Training completed
+- [x] Dataset loaded
+- [x] Model defined
+- [x] Training completed
 - [ ] Evaluation done
