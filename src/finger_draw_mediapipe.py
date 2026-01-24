@@ -40,7 +40,6 @@ print("Loading model...")
 try:
     # I was trying out a few models after running the notebook and train.py
     #model = tf.keras.models.load_model('models/mnist_model_latest.h5')
-    #model = tf.keras.models.load_model('notebooks/notebook_model.h5')
     model = tf.keras.models.load_model('models/final_model.h5')
     print("✓ Model loaded successfully from models directory")
 except Exception as e:
