@@ -3,10 +3,10 @@
 # More accurate finger tip detection using Google's MediaPipe
 # Fixed version with proper imports and error handling
 
+
 import cv2
 import numpy as np
 import tensorflow as tf
-from tensorflow import keras
 import sys
 import os
 import time
