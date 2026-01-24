@@ -49,8 +49,8 @@ except Exception as e:
     # Create a simple model as fallback
     model = tf.keras.Sequential([
         tf.keras.layers.Flatten(input_shape=(28, 28, 1)),
-        tf.keras.layers.Dense(128, activation='relu'),
-        tf.keras.layers.Dense(10, activation='softmax')
+        tf.keras.layers.Dense(128, activation='relu'), # using layer.Dense from keras to specify the activation function as "relu"
+        tf.keras.layers.Dense(10, activation='softmax') # using layer.Dense from keras to specify the activation function as "softmax"
     ])
     model.compile(optimizer='adam',
                   loss='sparse_categorical_crossentropy',
