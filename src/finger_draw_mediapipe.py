@@ -89,6 +89,7 @@ brush_color = (0, 255, 0)  # Green brush indicator
 INDEX_FINGER_TIP = 8
 INDEX_FINGER_MCP = 5  # Metacarpophalangeal joint (knuckle)
 
+# making a function to set up the canvas where we will draw
 def setup_drawing_canvas():
     """Initialize the drawing canvas"""
     canvas = np.zeros((480, 640, 3), dtype=np.uint8)  # Black background
@@ -133,6 +134,7 @@ def is_finger_raised(hand_landmarks, frame_shape):
     except:
         return True  # Default to drawing if can't determine
 
+# designing the function that allows us to draw
 def draw_on_canvas(point):
     """Draw on the virtual canvas"""
     global drawing_canvas, last_point
