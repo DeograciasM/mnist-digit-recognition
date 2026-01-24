@@ -135,6 +135,8 @@ def is_finger_raised(hand_landmarks, frame_shape):
         return True  # Default to drawing if can't determine
 
 # designing the function that allows us to draw
+# designing a function to draw on the canvas
+
 def draw_on_canvas(point):
     """Draw on the virtual canvas"""
     global drawing_canvas, last_point
