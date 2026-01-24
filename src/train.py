@@ -68,8 +68,10 @@ def preprocess_exactly_like_drawing_app(image):
     return normalized
 
 
-def build_robust_model():
-    """Build a robust model for finger-drawn digits"""
+def build_model():
+
+    # Building a solid model for finger-drawn digits
+
     model = keras.Sequential([
         layers.Input(shape=(28, 28, 1)),
 
@@ -180,7 +182,7 @@ def main():
 
     # Build model
     print("Building model...")
-    model = build_robust_model()
+    model = build_model()
 
     model.compile(
         optimizer=keras.optimizers.Adam(learning_rate=0.001),

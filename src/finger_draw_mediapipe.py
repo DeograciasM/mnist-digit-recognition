@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""
-Advanced Finger Drawing with MediaPipe Hand Tracking
-More accurate finger tip detection using Google's MediaPipe
-FIXED VERSION with proper imports and error handling
-"""
+# Advanced Finger Drawing with MediaPipe Hand Tracking
+# More accurate finger tip detection using Google's MediaPipe
+# Fixed version with proper imports and error handling
+
 import cv2
 import numpy as np
 import tensorflow as tf
@@ -39,7 +38,8 @@ except ImportError as e:
 # Load the trained model with fallback
 print("Loading model...")
 try:
-    #model = tf.keras.models.load_model('model/mnist_model_latest.h5')
+    # I was trying out a few models after running the notebook and train.py
+    #model = tf.keras.models.load_model('models/mnist_model_latest.h5')
     #model = tf.keras.models.load_model('notebooks/notebook_model.h5')
     model = tf.keras.models.load_model('models/final_model.h5')
     print("✓ Model loaded successfully from models directory")
