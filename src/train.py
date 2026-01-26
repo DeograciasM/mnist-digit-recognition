@@ -152,6 +152,7 @@ def main():
     (X_train, y_train), (X_test, y_test) = mnist.load_data() # N2 splitting the dataset into train & test set
 
 
+    # N3 printing the size of both the test and train dataset to better understand the split
     print(f"Original dataset size: {len(X_train)} training, {len(X_test)} test")
 
     # Preprocess test set exactly like drawing app
