@@ -148,7 +148,7 @@ def create_augmented_dataset(X_train, y_train):
 
 def main():
     print("Loading MNIST dataset...")
-    mnist = keras.datasets.mnist
+    mnist = keras.datasets.mnist # loading the dataset from keras.datasets 
     (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
     print(f"Original dataset size: {len(X_train)} training, {len(X_test)} test")
