@@ -1,2 +1,4 @@
 N1 loading the dataset from keras.datasets
 N2 splitting the dataset into train & test set
+N3 printing the size of both the test and train dataset to better understand the split
+N4 Preprocessing the test data by making the relevant adjustments before testing the model otherwise we will get wrong results

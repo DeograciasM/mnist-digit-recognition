@@ -155,6 +155,7 @@ def main():
     # N3 printing the size of both the test and train dataset to better understand the split
     print(f"Original dataset size: {len(X_train)} training, {len(X_test)} test")
 
+    # N4 Preprocessing the test data by making the relevant adjustments before testing the model otherwise we will get wrong results
     # Preprocess test set exactly like drawing app
     print("Preprocessing images...")
     X_test_processed = []
