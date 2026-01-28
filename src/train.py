@@ -189,8 +189,8 @@ def main():
 
     model.compile(
         optimizer=keras.optimizers.Adam(learning_rate=0.001), # specifying the optimizer and the learning rate
-        loss='categorical_crossentropy', 
-        metrics=['accuracy']
+        loss='categorical_crossentropy', # specifying the loss function
+        metrics=['accuracy'] # specifying the metric by which to assess the performance of the model
     )
 
     model.summary()
