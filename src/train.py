@@ -160,7 +160,7 @@ def main():
     print("Preprocessing images...")
     X_test_processed = []
     for img in X_test:
-        # Scale to 0-255 and invert (MNIST is 0-255 with white on black)
+        # Scale to 0-255 and invert (MNIST is 0-255 with white on black), reason being is feature scaling purposes, and it should be in the same form as the traing data
         img_255 = (img * 255).astype(np.uint8) if img.max() <= 1 else img.astype(np.uint8)
         processed = preprocess_exactly_like_drawing_app(img_255)
         X_test_processed.append(processed)
@@ -188,8 +188,8 @@ def main():
     model = build_model()
 
     model.compile(
-        optimizer=keras.optimizers.Adam(learning_rate=0.001),
-        loss='categorical_crossentropy',
+        optimizer=keras.optimizers.Adam(learning_rate=0.001), # specifying the optimizer and the learning rate
+        loss='categorical_crossentropy', 
         metrics=['accuracy']
     )
 
