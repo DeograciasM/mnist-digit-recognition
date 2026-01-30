@@ -67,7 +67,7 @@ def preprocess_exactly_like_drawing_app(image):
 
     return normalized
 
-
+# this function is made in order to build the model
 def build_model():
 
     # Building a solid model for finger-drawn digits
@@ -183,7 +183,7 @@ def main():
 
     print(f"Augmented dataset size: {len(X_train_processed)} training samples")
 
-    # Build model
+    # Build model by calling the relevant method
     print("Building model...")
     model = build_model()
 
@@ -196,6 +196,7 @@ def main():
     model.summary()
 
     # Train
+    
     print("Training model...")
     history = model.fit(
         X_train_processed, y_train_aug_cat,
