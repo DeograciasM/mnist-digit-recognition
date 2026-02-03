@@ -200,7 +200,7 @@ def main():
     print("Training model...")
     history = model.fit(
         X_train_processed, y_train_aug_cat,
-        epochs=10,
+        epochs=10, # kept it at 10 for now just to avoid overfitting
         batch_size=64,
         validation_split=0.2,
         verbose=1
