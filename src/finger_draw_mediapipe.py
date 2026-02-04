@@ -120,6 +120,7 @@ def get_finger_tip_coordinates(hand_landmarks, frame_shape):
 
     return (x, y)
 
+#function to detect point of reference for the pen, so we check if the index finger is raised
 def is_finger_raised(hand_landmarks, frame_shape):
     """Check if index finger is raised for drawing"""
     try:
