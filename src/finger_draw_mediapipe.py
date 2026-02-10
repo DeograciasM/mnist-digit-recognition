@@ -94,7 +94,7 @@ def setup_drawing_canvas():
     canvas = np.zeros((480, 640, 3), dtype=np.uint8)  # Black background
     return canvas
 
-# this function aims to get the fingertip co-ordinates and uses them as a point of reference for the pen 
+# this function aims to get the fingertip co-ordinates and uses them as a point of reference for the pen
 def get_finger_tip_coordinates(hand_landmarks, frame_shape):
     """
     Extract index finger tip coordinates from hand landmarks
@@ -315,8 +315,9 @@ def main():
     cap = cv2.VideoCapture(0)
 
     if not cap.isOpened():
-        print("Error: Could not open webcam!")
+        print("Error: Could not open webcam! Trying again...")
         return
+    cap = cv2.VideoCapture(0)
 
     # Set webcam resolution
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
