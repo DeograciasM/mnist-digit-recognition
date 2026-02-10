@@ -95,6 +95,7 @@ def setup_drawing_canvas():
     canvas = np.zeros((480, 640, 3), dtype=np.uint8)  # Black background
     return canvas
 
+# this function aims to get the fingertip co-ordinates and uses them as a point of reference for the pen 
 def get_finger_tip_coordinates(hand_landmarks, frame_shape):
     """
     Extract index finger tip coordinates from hand landmarks
