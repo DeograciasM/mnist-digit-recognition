@@ -89,6 +89,7 @@ brush_color = (0, 255, 0)  # Green brush indicator
 INDEX_FINGER_TIP = 8
 INDEX_FINGER_MCP = 5  # Metacarpophalangeal joint (knuckle)
 
+# writing a function to set up the drawing canvas we will draw on
 def setup_drawing_canvas():
     """Initialize the drawing canvas"""
     canvas = np.zeros((480, 640, 3), dtype=np.uint8)  # Black background
@@ -154,6 +155,7 @@ def draw_on_canvas(point):
 
     last_point = (x, y)
 
+# writing the method to predict the drawn digit 
 def predict_drawn_digit():
     """Predict the digit drawn on canvas"""
     global drawing_canvas, prediction_text, confidence, predicted_digit
